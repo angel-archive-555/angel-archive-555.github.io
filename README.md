@@ -146,7 +146,15 @@
   <img src="https://i.pinimg.com/736x/ba/b0/a8/bab0a841f270f6de5203b90d81c55030.jpg" alt="Lady Bird Poster">
   <br>
   <a href="https://drive.google.com/file/d/1MDeZJoBJFLXTDskJWi-QUaIO59FrteCt/view" target="_blank">Click to watch ♡</a>
-</div><!--
+</div>
+
+<div class="movie-card">
+  Thirteen
+  <img src="https://i.pinimg.com/736x/81/b2/55/81b25536f945114862164dfeb1f10031.jpg" alt="co09 poster">
+
+  <br>
+  <a href="https://horrorgames.io/class-of-09.embed" target="_blank">Click to play ♡</a>
+</div>
 
 <div style="text-align:center;">
   <iframe
