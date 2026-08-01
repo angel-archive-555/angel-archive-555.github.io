@@ -149,21 +149,13 @@
 </div>
 
 <div class="movie-card">
-  Thirteen
+  Class of 09
   <img src="https://i.pinimg.com/736x/81/b2/55/81b25536f945114862164dfeb1f10031.jpg" alt="co09 poster">
 
   <br>
   <a href="https://horrorgames.io/class-of-09.embed" target="_blank">Click to play ♡</a>
 </div>
 
-<div style="text-align:center;">
-  <iframe
-    src="https://horrorgames.io/class-of-09.embed"
-    width="1000"
-    height="700"
-    frameborder="0"
-    allowfullscreen>
-  </iframe>
 </div>
 
 
