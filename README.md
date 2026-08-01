@@ -151,25 +151,25 @@
 <div class="movie-card">
   Class of 09
   <img src="https://i.pinimg.com/736x/7a/52/91/7a5291bb41e9a7272a7d359be221408d.jpg" alt="co09 poster">
-
   <br>
   <a href="https://horrorgames.io/class-of-09.embed" target="_blank">Click to play ♡</a>
 </div>
+
 <div class="movie-card">
-  Class of 09- The re-up
+  Class of 09 - The Re-Up
   <img src="https://i.pinimg.com/736x/5f/d9/08/5fd908382f0c7f3cd967056de086c24f.jpg" alt="co09 poster">
   <br>
   <a href="https://tiny-scone-143cb7.netlify.app" target="_blank">Click to play ♡</a>
 </div>
 
 <div class="movie-card">
-  Class of 09- The Flipside
+  Class of 09 - The Flipside
   <img src="https://i.pinimg.com/736x/1b/91/1d/1b911d7f3bcb7e140ab1e21e1268370d.jpg" alt="co09 poster">
   <br>
   <a href="https://superlative-snickerdoodle-4e9895.netlify.app/" target="_blank">Click to play ♡</a>
 </div>
 
-</div> <!-- closes movie-grid -->
+</div> <!-- ONLY ONE closing movie-grid div -->
 
 </body>
 
