@@ -152,7 +152,7 @@
   Class of 09
   <img src="https://i.pinimg.com/736x/7a/52/91/7a5291bb41e9a7272a7d359be221408d.jpg" alt="co09 poster">
   <br>
-  <a href="https://horrorgames.io/class-of-09.embed" target="_blank">Click to play ♡</a>
+  <a href="https://visionary-kashata-ba7c3e.netlify.app/" target="_blank">Click to play ♡</a>
 </div>
 
 <div class="movie-card">
