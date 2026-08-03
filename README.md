@@ -138,6 +138,17 @@
   The Perks of Being a Wallflower
   <img src="https://i.pinimg.com/736x/a5/18/56/a518569413c0d1f9237825cad7a28896.jpg" alt="The Perks of Being a Wallflower Poster">
   <br>
+  <a href="<div class="movie-card">
+  Coraline
+  <img src="https://i.pinimg.com/736x/96/06/48/960648dc8993fcac71464769c1a0dc59.jpg" alt="Coraline">
+  <br>
+  <a href="https://drive.google.com/file/d/17hluV4TY05UsZZH_BwAQdZZKFvE8Vs9B/view" target="_blank">Click to watch ♡</a>
+</div>" target="_blank">Click to watch ♡</a>
+</div>
+<div class="movie-card">
+  The Perks of Being a Wallflower
+  <img src="https://i.pinimg.com/736x/a5/18/56/a518569413c0d1f9237825cad7a28896.jpg" alt="The Perks of Being a Wallflower Poster">
+  <br>
   <a href="https://drive.google.com/file/d/17hluV4TY05UsZZH_BwAQdZZKFvE8Vs9B/view" target="_blank">Click to watch ♡</a>
 </div>
 
