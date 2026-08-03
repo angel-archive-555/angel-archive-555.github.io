@@ -143,7 +143,7 @@
 
 <div class="movie-card">
   Priscilla
-  <img src="https://i.pinimg.com/736x/85/31/62/85316221d35ecaed12e1ed734dc1e27c.jpg" alt="Lady Bird Poster">
+  <img src="https://i.pinimg.com/736x/85/31/62/85316221d35ecaed12e1ed734dc1e27c.jpg" alt="Priscilla poster">
   <br>
   <a href="https://drive.google.com/file/d/1le8jgLzDHfaT5jqLJNlapPLYj-RepN6s/view" target="_blank">Click to watch ♡</a>
 </div>
