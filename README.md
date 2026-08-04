@@ -150,21 +150,21 @@
 
 <div class="movie-card">
   The last unicorn
-  <img src="https://i.pinimg.com/736x/85/31/62/85316221d35ecaed12e1ed734dc1e27c.jpg" alt="The last unicorn poster">
+  <img src="https://i.pinimg.com/736x/bc/bb/ae/bcbbaed271e3f74ccedac21447ad597a.jpg" alt="The last unicorn poster">
   <br>
   <a href="https://www.youtube.com/watch?v=mD7Is57Y-fc" target="_blank">Click to watch ♡</a>
 </div>
 
 <div class="movie-card">
   Heathers
-  <img src="https://i.pinimg.com/736x/85/31/62/85316221d35ecaed12e1ed734dc1e27c.jpg" alt="Heathers poster">
+  <img src="https://i.pinimg.com/736x/96/36/bd/9636bd9a0894179c77fb1526596cc7b7.jpg" alt="Heathers poster">
   <br>
   <a href="https://drive.google.com/file/d/16LqcZJt63cHfrxItpzpHzakSiCFIQvop/view" target="_blank">Click to watch ♡</a>
 </div>
 
 <div class="movie-card">
   But i'm a cheerleader
-  <img src="https://i.pinimg.com/736x/85/31/62/85316221d35ecaed12e1ed734dc1e27c.jpg" alt="Heathers poster">
+  <img src="https://i.pinimg.com/736x/fe/d2/f8/fed2f8fed5151b0473ff1f7b75e3300e.jpg" alt="BIACL poster">
   <br>
   <a href="https://drive.google.com/file/d/1ZOyuSiWQejZwrWwFj1OYDWmasWBwo922/view" target="_blank">Click to watch ♡</a>
 </div>
