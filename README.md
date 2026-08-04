@@ -149,6 +149,27 @@
 </div>
 
 <div class="movie-card">
+  The last unicorn
+  <img src="https://i.pinimg.com/736x/85/31/62/85316221d35ecaed12e1ed734dc1e27c.jpg" alt="The last unicorn poster">
+  <br>
+  <a href="https://www.youtube.com/watch?v=mD7Is57Y-fc" target="_blank">Click to watch ♡</a>
+</div>
+
+<div class="movie-card">
+  Heathers
+  <img src="https://i.pinimg.com/736x/85/31/62/85316221d35ecaed12e1ed734dc1e27c.jpg" alt="Heathers poster">
+  <br>
+  <a href="https://drive.google.com/file/d/16LqcZJt63cHfrxItpzpHzakSiCFIQvop/view" target="_blank">Click to watch ♡</a>
+</div>
+
+<div class="movie-card">
+  But i'm a cheerleader
+  <img src="https://i.pinimg.com/736x/85/31/62/85316221d35ecaed12e1ed734dc1e27c.jpg" alt="Heathers poster">
+  <br>
+  <a href="https://drive.google.com/file/d/1ZOyuSiWQejZwrWwFj1OYDWmasWBwo922/view" target="_blank">Click to watch ♡</a>
+</div>
+
+<div class="movie-card">
   Class of 09
   <img src="https://i.pinimg.com/736x/7a/52/91/7a5291bb41e9a7272a7d359be221408d.jpg" alt="co09 poster">
   <br>
