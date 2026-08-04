@@ -219,6 +219,34 @@
 </div>
 
 <div class="movie-card">
+  Backrooms 
+  <img src="https://i.pinimg.com/1200x/6d/bd/4d/6dbd4dca4b8494bd507a0b3ceaa72617.jpg" alt="backrooms poster">
+  <br>
+  <a href="https://drive.google.com/file/d/1vSwPRh87I4wwSo-304urWEc7Mdh8E2hi/view" target="_blank">Click to watch ♡</a>
+</div>
+
+<div class="movie-card">
+  Dead poets society
+  <img src="https://i.pinimg.com/736x/e5/b3/ca/e5b3ca6d45e8207631e0e80c84a5c717.jpg" alt="dps poster">
+  <br>
+  <a href="https://drive.google.com/file/d/1gpGtBaOOPuWwcl1sYh_o0KKnX9NHLpqv/view" target="_blank">Click to watch ♡</a>
+</div>
+
+<div class="movie-card">
+  Buffalo '66
+  <img src="https://i.pinimg.com/736x/64/d4/9b/64d49ba385e832b87401062c31774a6e.jpg" alt="b66 poster">
+  <br>
+  <a href="https://www.youtube.com/watch?v=vAWw1OZ7lZc" target="_blank">Click to watch ♡</a>
+</div>
+
+<div class="movie-card">
+  white Oleander
+  <img src="https://i.pinimg.com/1200x/c9/2e/1e/c92e1e65bd84949b13494e21c661874c.jpg" alt="WO poster">
+  <br>
+  <a href="https://www.youtube.com/watch?v=zmLp_PGda0M&rco=1" target="_blank">Click to watch ♡</a>
+</div>
+
+<div class="movie-card">
   Class of 09
   <img src="https://i.pinimg.com/736x/7a/52/91/7a5291bb41e9a7272a7d359be221408d.jpg" alt="co09 poster">
   <br>
