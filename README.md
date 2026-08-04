@@ -163,6 +163,13 @@
 </div>
 
 <div class="movie-card">
+  All barbie movies
+  <img src="https://i.pinimg.com/736x/68/60/aa/6860aac135827ffbb96d88b069e37cf7.jpg" alt="Barbie poster">
+  <br>
+  <a href="https://docs.google.com/document/d/1ZgoSThttdDF2s0o_uXb14t56DKXSfQYEEaIGEEMjm4s/edit?tab=t.0" target="_blank">Click to watch ♡</a>
+</div>
+
+<div class="movie-card">
   But i'm a cheerleader
   <img src="https://i.pinimg.com/736x/fe/d2/f8/fed2f8fed5151b0473ff1f7b75e3300e.jpg" alt="BIACL poster">
   <br>
@@ -202,6 +209,13 @@
   <img src="https://i.pinimg.com/736x/f2/1a/21/f21a212e210e26067741b0133d49c083.jpg" alt="obsession poster">
   <br>
   <a href="https://drive.google.com/file/d/1bQXOtjLq5VWPf7TGulIbH97MeS9bp40e/view" target="_blank">Click to watch ♡</a>
+</div>
+
+<div class="movie-card">
+  ALL Monster high movies
+  <img src="https://i.pinimg.com/736x/ac/ed/1e/aced1e9e2b5957fd0f9448baa773e11f.jpg" alt="MH poster">
+  <br>
+  <a href="https://drive.google.com/drive/folders/1ci_0gaTBi0WKe1oKsqN-dMxuPsGKs-Bv" target="_blank">Click to watch ♡</a>
 </div>
 
 <div class="movie-card">
