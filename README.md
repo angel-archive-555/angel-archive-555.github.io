@@ -170,6 +170,41 @@
 </div>
 
 <div class="movie-card">
+  Coraline
+  <img src="https://i.pinimg.com/736x/55/f5/78/55f5788a09fa98b84a4eed03a0259f18.jpg" alt="coraline poster">
+  <br>
+  <a href="https://drive.google.com/file/d/1GZFbNm4ry8ckaqpPgbAR334xa_doF_sf/view" target="_blank">Click to watch ♡</a>
+</div>
+
+<div class="movie-card">
+  Edward Scissor Hands
+  <img src="https://i.pinimg.com/736x/f8/4f/c8/f84fc8de95c172d7c7775ee2ca81a2e1.jpg" alt="ESH poster">
+  <br>
+  <a href="https://drive.google.com/file/d/185Nj77vinyTVQ5nd13u-Zcm5tNQMu8VK/view" target="_blank">Click to watch ♡</a>
+</div>
+
+<div class="movie-card">
+  Fantastic Mr. Fox
+  <img src="https://i.pinimg.com/736x/d2/1a/01/d21a012647f2b98ea484ea9fe2093b57.jpg" alt="FMF poster">
+  <br>
+  <a href="https://drive.google.com/file/d/1sQfUPLkuuvsO3uI9j8xxA6fNp9vBrOVb/view" target="_blank">Click to watch ♡</a>
+</div>
+
+<div class="movie-card">
+  Girl, interrupted
+  <img src="https://i.pinimg.com/1200x/72/63/7c/72637cb0f435aec0d7d37fac73349dfd.jpg" alt="GI poster">
+  <br>
+  <a href="https://drive.google.com/file/d/14_979vA28G6DGyKRODOKWGxmikMAxR6Y/view" target="_blank">Click to watch ♡</a>
+</div>
+
+<div class="movie-card">
+  Obsession
+  <img src="https://i.pinimg.com/736x/f2/1a/21/f21a212e210e26067741b0133d49c083.jpg" alt="obsession poster">
+  <br>
+  <a href="https://drive.google.com/file/d/1bQXOtjLq5VWPf7TGulIbH97MeS9bp40e/view" target="_blank">Click to watch ♡</a>
+</div>
+
+<div class="movie-card">
   Class of 09
   <img src="https://i.pinimg.com/736x/7a/52/91/7a5291bb41e9a7272a7d359be221408d.jpg" alt="co09 poster">
   <br>
