@@ -247,6 +247,27 @@
 </div>
 
 <div class="movie-card">
+  Corpse Bride
+  <img src="https://i.pinimg.com/1200x/87/7b/b3/877bb33aa994727e3707bb08bf4f425b.jpg" alt="Corpse bride poster">
+  <br>
+  <a href="https://drive.google.com/file/d/1qjouzyLtFDTfYK72fnVBXlYaOhZB2kN_/view" target="_blank">Click to watch ♡</a>
+</div>
+
+<div class="movie-card">
+  Sleeping Beauty
+  <img src="https://i.pinimg.com/736x/fb/4d/6a/fb4d6a15d90f657655f66013d1e5c9e4.jpg" alt="sleeping beauty poster">
+  <br>
+  <a href="https://drive.google.com/drive/folders/1ANzBByCR3rNtyuTbg3HGtnLWEST25Qa6" target="_blank">Click to watch ♡</a>
+</div>
+
+<div class="movie-card">
+  10 Things I Hate About You
+  <img src="https://i.pinimg.com/736x/26/5a/63/265a63bc2ee0df5ef19d38c38bcea608.jpg" alt="10 things poster">
+  <br>
+  <a href="https://drive.google.com/file/d/1PEdNPGJFkJ-htycS6lrb58ptavRzHPC_/view" target="_blank">Click to watch ♡</a>
+</div>
+
+<div class="movie-card">
   Class of 09
   <img src="https://i.pinimg.com/736x/7a/52/91/7a5291bb41e9a7272a7d359be221408d.jpg" alt="co09 poster">
   <br>
