@@ -1,103 +1,92 @@
+```html
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <title>Angel Archive ⋆𐙚 ̊</title>
+
   <style>
+
     body {
-      background-color: #FFECEC; /* baby blush pink */
+      background-color: #FFECEC;
       font-family: 'Georgia', serif;
-      color: #B0B0B0; /* light grey for all text */
+      color: #B0B0B0;
       margin: 0;
       padding: 30px;
     }
 
-h1 {
-  text-align: center;
-  font-size: 48px;
-  margin-bottom: 10px;
-  color: #B0B0B0;
-}
+    h1 {
+      text-align: center;
+      font-size: 48px;
+      margin-bottom: 10px;
+      color: #B0B0B0;
+    }
 
-p.intro {
-  text-align: center;
-  font-size: 20px;
-  margin-bottom: 40px;
-  color: #B0B0B0;
-}
+    p.intro {
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: 40px;
+      color: #B0B0B0;
+    }
 
-/* Game grid */
-.game-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 18px;
-  max-width: 900px;
-  margin: 0 auto;
-}
+    /* Game grid */
+    .game-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
 
-/* Game cards */
-.game-card {
-  background-color: #F8D8E2;
-  padding: 12px;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  color: #B0B0B0;
-}
+    /* Game cards */
+    .game-card {
+      background-color: #F8D8E2;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      color: #B0B0B0;
+    }
 
-.game-card:hover {
-  transform: scale(1.04);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
+    .game-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
 
-/* Game images */
-.game-card img {
-  width: 100%;
-  height: 190px;
-  object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 10px;
-}
+    /* Game images */
+    .game-card img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 10px;
+      object-fit: cover;
+    }
 
-/* Play button */
-.game-card a {
-  display: inline-block;
-  background-color: #FFECEC;
-  color: #B0B0B0;
-  padding: 7px 13px;
-  border-radius: 12px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 14px;
-  transition: all 0.2s ease;
-}
+    /* Play button */
+    .game-card a {
+      display: inline-block;
+      background-color: #FFECEC;
+      color: #B0B0B0;
+      padding: 8px 16px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.2s ease;
+    }
 
-.game-card a:hover {
-  background-color: #FFB6C1;
-  transform: scale(1.05);
-  color: #B0B0B0;
-}
+    .game-card a:hover {
+      background-color: #FFB6C1;
+      transform: scale(1.05);
+      color: #B0B0B0;
+    }
 
-footer {
-  margin-top: 50px;
-  text-align: center;
-  font-size: 16px;
-  color: #B0B0B0;
-}
-
-/* Smaller screens */
-@media (max-width: 600px) {
-  .game-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .game-card img {
-    height: 160px;
-  }
-}
-```
-
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 16px;
+      color: #B0B0B0;
+    }
 
   </style>
 </head>
@@ -105,34 +94,50 @@ footer {
 <body>
 
   <h1>Angel Archive ⋆𐙚 ̊</h1>
- 
-<p style="text-align:center; font-size:16px; color:#B0B0B0; margin-bottom:60px;">
-  When you click a game, it'll download in the browser, not on ur device !! ♡
-</p>
 
-<div class="game-card">
-  Class of 09
-  <img src="https://i.pinimg.com/736x/7a/52/91/7a5291bb41e9a7272a7d359be221408d.jpg" alt="co09 poster">
-  <br>
-  <a href="https://visionary-kashata-ba7c3e.netlify.app/" target="_blank">Click to play ♡</a>
-</div>
+  <p style="text-align:center; font-size:16px; color:#B0B0B0; margin-bottom:60px;">
+    When you click a game, it'll download in the browser, not on ur device !! ♡
+  </p>
 
-<div class="game-card">
-  Class of 09 - The Re-Up
-  <img src="https://i.pinimg.com/736x/5f/d9/08/5fd908382f0c7f3cd967056de086c24f.jpg" alt="co09 poster">
-  <br>
-  <a href="https://tiny-scone-143cb7.netlify.app" target="_blank">Click to play ♡</a>
-</div>
+  <div class="game-grid">
 
-<div class="game-card">
-  Class of 09 - The Flipside
-  <img src="https://i.pinimg.com/736x/1b/91/1d/1b911d7f3bcb7e140ab1e21e1268370d.jpg" alt="co09 poster">
-  <br>
-  <a href="https://superlative-snickerdoodle-4e9895.netlify.app/" target="_blank">Click to play ♡</a>
-</div>
+    <div class="game-card">
+      Class of 09
+      <img
+        src="https://i.pinimg.com/736x/7a/52/91/7a5291bb41e9a7272a7d359be221408d.jpg"
+        alt="Class of 09 poster">
+      <br>
+      <a href="https://visionary-kashata-ba7c3e.netlify.app/" target="_blank">
+        Click to play ♡
+      </a>
+    </div>
 
-</div> <!-- ONLY ONE closing movie-grid div -->
+    <div class="game-card">
+      Class of 09 - The Re-Up
+      <img
+        src="https://i.pinimg.com/736x/5f/d9/08/5fd908382f0c7f3cd967056de086c24f.jpg"
+        alt="Class of 09 The Re-Up poster">
+      <br>
+      <a href="https://tiny-scone-143cb7.netlify.app" target="_blank">
+        Click to play ♡
+      </a>
+    </div>
+
+    <div class="game-card">
+      Class of 09 - The Flipside
+      <img
+        src="https://i.pinimg.com/736x/1b/91/1d/1b911d7f3bcb7e140ab1e21e1268370d.jpg"
+        alt="Class of 09 The Flipside poster">
+      <br>
+      <a href="https://superlative-snickerdoodle-4e9895.netlify.app/" target="_blank">
+        Click to play ♡
+      </a>
+    </div>
+
+  </div>
 
 </body>
 
 </html>
+```
+
