@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <title>Angel Archive ⋆𐙚 ̊</title>
 
-  <div class="search-container">
-  <input
-    type="text"
-    id="movieSearch"
-    placeholder="Search for a movie..."
-    onkeyup="searchMovies()"
-  >
+<div class="search-container">
+    <span>⌕</span>
+    <input
+        type="text"
+        id="movieSearch"
+        placeholder="search movies..."
+        onkeyup="searchMovies()"
+    >
 </div>
   <style>
   * {
@@ -183,28 +184,41 @@
     }
 .search-container {
     text-align: center;
-    margin: 20px;
+    margin: 30px auto;
 }
 
 #movieSearch {
-    width: 60%;
-    max-width: 350px;
-    padding: 10px;
-    border: 1px solid #d8bebe;
-    border-radius: 20px;
-    background-color: #fffafa;
-    color: #888;
+    width: 65%;
+    max-width: 380px;
+    padding: 13px 18px;
+    border: 1px solid #e5caca;
+    border-radius: 3px;
+    background: #fffafa;
+    color: #8f7777;
     font-family: Georgia, serif;
-    font-size: 14px;
+    font-size: 13px;
+    letter-spacing: 0.5px;
     outline: none;
+    box-shadow: 2px 3px 8px rgba(180, 140, 140, 0.08);
+    transition: 0.3s;
 }
 
 #movieSearch:focus {
-    border-color: #b99b9b;
+    border-color: #c9a5a5;
+    background: #ffffff;
 }
 
 #movieSearch::placeholder {
-    color: #b8a5a5;
+    color: #c4aaaa;
+    font-style: italic;
+}
+
+.search-label {
+    color: #b69a9a;
+    font-family: Georgia, serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
 }
     .movie-card a {
       font-size: 13px;
