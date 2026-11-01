@@ -3,6 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Angel Archive ⋆𐙚 ̊</title>
+
+  <div class="search-container">
+  <input
+    type="text"
+    id="movieSearch"
+    placeholder="Search for a movie..."
+    onkeyup="searchMovies()"
+  >
+</div>
   <style>
   * {
     box-sizing: border-box;
@@ -172,7 +181,31 @@
     .movie-card {
       padding: 12px;
     }
+.search-container {
+    text-align: center;
+    margin: 20px;
+}
 
+#movieSearch {
+    width: 60%;
+    max-width: 350px;
+    padding: 10px;
+    border: 1px solid #d8bebe;
+    border-radius: 20px;
+    background-color: #fffafa;
+    color: #888;
+    font-family: Georgia, serif;
+    font-size: 14px;
+    outline: none;
+}
+
+#movieSearch:focus {
+    border-color: #b99b9b;
+}
+
+#movieSearch::placeholder {
+    color: #b8a5a5;
+}
     .movie-card a {
       font-size: 13px;
     }
@@ -819,7 +852,22 @@ Twilight
 </div> 
     
 </div> <!-- ONLY ONE closing movie-grid div -->
-  
+  <script>
+function searchMovies() {
+    let input = document.getElementById("movieSearch").value.toLowerCase();
+    let cards = document.querySelectorAll(".movie-card");
+
+    cards.forEach(card => {
+        let title = card.textContent.toLowerCase();
+
+        if (title.includes(input)) {
+            card.style.display = "";
+        } else {
+            card.style.display = "none";
+        }
+    });
+}
+</script>
 </body>
 
 </html>
