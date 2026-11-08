@@ -7,40 +7,46 @@
   <link rel="icon" type="image/png" href="https://user.uploads.dev/file/acee98e323e62cdd01c675998a3a51f7.png">
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       background-color: #FFECEC;
       font-family: Georgia, serif;
       color: #B0B0B0;
       margin: 0;
-      padding: 30px;
+      padding: 15px;
       min-height: 100vh;
-      box-sizing: border-box;
     }
 
     /* Main layout */
     .page-layout {
-      max-width: 1250px;
-      margin: 0 auto;
+      width: 100%;
       display: grid;
-      grid-template-columns: 290px 1fr;
-      gap: 30px;
+      grid-template-columns: 350px minmax(0, 1fr);
+      gap: 15px;
       align-items: stretch;
-      min-height: calc(100vh - 60px);
+      min-height: calc(100vh - 30px);
     }
 
     /* Sidebar */
     .sidebar {
       background-color: #F8F3E9;
       border-radius: 18px;
-      padding: 15px;
+      padding: 12px;
       text-align: center;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-      box-sizing: border-box;
-      min-height: calc(100vh - 60px);
+      min-height: calc(100vh - 30px);
+      width: 100%;
     }
 
     .sidebar iframe {
+      display: block;
+      width: 314px;
       max-width: 100%;
+      height: 321px;
+      margin: 0 auto;
       border: none;
     }
 
@@ -86,7 +92,7 @@
     h1 {
       font-size: 56px;
       font-weight: normal;
-      margin: 5px 0 5px;
+      margin: 5px 0;
       color: #B0B0B0;
       letter-spacing: 1px;
     }
@@ -173,10 +179,9 @@
     }
 
     /* Mobile */
-    @media (max-width: 800px) {
+    @media (max-width: 850px) {
       .page-layout {
         grid-template-columns: 1fr;
-        min-height: auto;
       }
 
       .sidebar {
@@ -200,8 +205,9 @@
         max-width: 400px;
       }
 
-      body {
-        padding: 20px;
+      .sidebar iframe {
+        width: 314px;
+        max-width: 100%;
       }
     }
   </style>
@@ -220,7 +226,7 @@
 
       <!-- PUSHEEN PET -->
       <iframe
-        width="100%"
+        width="314"
         height="321"
         scrolling="no"
         src="https://gify.pet/pet/pet.html?name=Pusheen&dob=1794108559&gender=f&element=Air&pet=https%3A%2F%2Fuser.uploads.dev%2Ffile%2Fb149a5930dfa5e821723af9b5d3984a9.png&map=tree.jpg&background=https%3A%2F%2Fuser.uploads.dev%2Ffile%2F2d1204bf9a8ae01400b25d5172a05de3.jpg&tablecolor=black&textcolor=%23ffe5e5"
@@ -231,19 +237,18 @@
         ⊹₊˚‧︵‿︵‧˚₊⊹
       </div>
 
-      <!-- UPDATES -->
       <div class="updates-title">
         updates
       </div>
 
       <div class="update">
         <div class="update-date">08.11.26</div>
-        hello !! welcome to angel archive 
+        hello!! welcome to angel archive ♡
       </div>
 
       <div class="update">
         <div class="update-date">08.11.26</div>
-        maybe books coming soon... 👀👀
+        more movies and games coming soon!
       </div>
 
       <div class="sidebar-divider">
@@ -259,8 +264,7 @@
 
       <h1>Angel Archive</h1>
 
-      <div class="subtitle">
-      </div>
+      <div class="subtitle"></div>
 
       <div class="divider">
         ⊹₊˚‧︵‿₊⊱·✶·⊰₊‿︵‧˚₊⊹
