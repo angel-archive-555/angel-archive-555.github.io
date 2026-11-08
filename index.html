@@ -1,11 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <title>Angel Archive  ˖Ი𐑼⋆ ࣪ ˖</title>
+  <title>Angel Archive ˖Ი𐑼⋆ ࣪ ˖</title>
   <link rel="icon" type="image/png" href="https://user.uploads.dev/file/acee98e323e62cdd01c675998a3a51f7.png">
-</head>
-
 
   <style>
     body {
@@ -18,13 +17,64 @@
       box-sizing: border-box;
     }
 
-    .container {
-      max-width: 900px;
+    /* Main layout */
+    .page-layout {
+      max-width: 1150px;
       margin: 0 auto;
-      text-align: center;
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 30px;
+      align-items: start;
     }
 
-    /* Little angel decoration */
+    /* Sidebar */
+    .sidebar {
+      background-color: #F8F3E9;
+      border-radius: 18px;
+      padding: 12px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      margin-top: 80px;
+    }
+
+    .sidebar iframe {
+      max-width: 100%;
+      border: none;
+    }
+
+    .sidebar-divider {
+      margin: 12px 0;
+      letter-spacing: 2px;
+      font-size: 13px;
+    }
+
+    .updates-title {
+      font-size: 23px;
+      margin-bottom: 15px;
+    }
+
+    .update {
+      background-color: #FFECEC;
+      border-radius: 12px;
+      padding: 12px;
+      margin-bottom: 12px;
+      font-size: 13px;
+      line-height: 1.6;
+      text-align: left;
+    }
+
+    .update-date {
+      font-size: 11px;
+      margin-bottom: 5px;
+      font-style: italic;
+    }
+
+    /* Main content */
+    .container {
+      text-align: center;
+      min-width: 0;
+    }
+
     .angel {
       font-size: 28px;
       margin-top: 20px;
@@ -34,7 +84,7 @@
     h1 {
       font-size: 56px;
       font-weight: normal;
-      margin: 5px 0 5px;
+      margin: 5px 0;
       color: #B0B0B0;
       letter-spacing: 1px;
     }
@@ -74,7 +124,7 @@
       margin: 0;
     }
 
-    /* Archive buttons */
+    /* Archive cards */
     .archive-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -120,14 +170,26 @@
       color: #B0B0B0;
     }
 
-    .tiny {
-      font-size: 12px;
-      margin-top: 8px;
-      opacity: 0.8;
-    }
-
     /* Mobile */
-    @media (max-width: 700px) {
+    @media (max-width: 800px) {
+      .page-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        margin-top: 0;
+        max-width: 320px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        grid-row: 2;
+      }
+
+      .container {
+        grid-row: 1;
+      }
+
       h1 {
         font-size: 42px;
       }
@@ -145,104 +207,140 @@
 </head>
 
 <body>
-	
-  <audio id="audio" src="https://file.garden/aoKQVvC9s2i36Woz/All%20unreleased/Boarding%20School.mp3" loop autoplay></audio>
-	
-</div>
-<div class="container">
 
-    <div class="angel">𐙚 ⋆｡˚</div>
+  <audio id="audio"
+    src="https://file.garden/aoKQVvC9s2i36Woz/All%20unreleased/Boarding%20School.mp3"
+    loop autoplay></audio>
 
-    <h1>Angel Archive</h1>
+  <div class="page-layout">
 
-    <div class="subtitle">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
 
-    </div>
+      <!-- PUSHEEN PET -->
+      <iframe
+        width="100%"
+        height="321"
+        scrolling="no"
+        src="https://gify.pet/pet/pet.html?name=Pusheen &dob=1794108559&gender=f&element=Air&pet=https%3A%2F%2Fuser.uploads.dev%2Ffile%2Fb149a5930dfa5e821723af9b5d3984a9.png&map=tree.jpg&background=https%3A%2F%2Fuser.uploads.dev%2Ffile%2F2d1204bf9a8ae01400b25d5172a05de3.jpg&tablecolor=black&textcolor=%23ffe5e5"
+        frameborder="0">
+      </iframe>
 
-    <div class="divider">
-      ⊹₊˚‧︵‿₊⊱·✶·⊰₊‿︵‧˚₊⊹
-    </div>
-
-    <div class="welcome">
-
-      <div class="welcome-title">
-        welcome ໒꒱⋆.˚
+      <div class="sidebar-divider">
+        ⊹₊˚‧︵‿︵‧˚₊⊹
       </div>
 
-      <p>
-        Movies, Shows, Games and music
-      </p>
+      <!-- UPDATES -->
+      <div class="updates-title">
+        updates
+      </div>
+
+      <div class="update">
+        <div class="update-date">08.11.26</div>
+        hello!! welcome to angel archive ♡
+      </div>
+
+      <div class="update">
+        <div class="update-date">08.11.26</div>
+        more movies and games coming soon!
+      </div>
+
+      <div class="sidebar-divider">
+        ⊹₊˚‧︵‿︵‧˚₊⊹
+      </div>
+
+    </aside>
+
+
+    <!-- MAIN HOMEPAGE -->
+    <div class="container">
+
+      <div class="angel">𐙚 ⋆｡˚</div>
+
+      <h1>Angel Archive</h1>
+
+      <div class="subtitle">
+      </div>
+
+      <div class="divider">
+        ⊹₊˚‧︵‿₊⊱·✶·⊰₊‿︵‧˚₊⊹
+      </div>
+
+      <div class="welcome">
+
+        <div class="welcome-title">
+          welcome ໒꒱⋆.˚
+        </div>
+
+        <p>
+          Movies, Shows, Games and music
+        </p>
+
+      </div>
+
+      <div class="archive-grid">
+
+        <!-- MOVIES -->
+        <a href="movies.html" class="archive-card">
+
+          <div class="archive-icon">🎬</div>
+
+          <div class="archive-title">
+            Movies and Shows
+          </div>
+
+          <div class="archive-description">
+            films, and tv shows!! includes over 70 titles
+          </div>
+
+        </a>
+
+        <!-- GAMES -->
+        <a href="games.html" class="archive-card">
+
+          <div class="archive-icon">💿</div>
+
+          <div class="archive-title">
+            Games
+          </div>
+
+          <div class="archive-description">
+            games to play! Includes all class of 09 games
+          </div>
+
+        </a>
+
+        <!-- MUSIC -->
+        <a href="music.html" class="archive-card">
+
+          <div class="archive-icon">🎧</div>
+
+          <div class="archive-title">
+            Music
+          </div>
+
+          <div class="archive-description">
+            A collection of songs! includes lana del rey unrealeased
+          </div>
+
+        </a>
+
+      </div>
+
+      <footer>
+
+        ˚.⋆꒰১ angel archive ໒꒱⋆.˚
+
+        <div style="margin-top:20px;">
+          <a href="https://tally.so/r/lbxLEN" target="_blank"
+            style="display:inline-block;background-color:#F8F3E9;color:#B0B0B0;text-decoration:none;padding:14px 28px;border-radius:18px;font-size:17px;box-shadow:0 4px 12px rgba(0,0,0,0.08);">
+            🎬 suggest a movie
+          </a>
+        </div>
+
+      </footer>
 
     </div>
-
-    <div class="archive-grid">
-
-      <!-- MOVIES -->
-      <a href="movies.html" class="archive-card">
-
-        <div class="archive-icon">🎬</div>
-
-        <div class="archive-title">
-          Movies and Shows
-        </div>
-
-        <div class="archive-description">
-          films, and tv shows!! includes over 70 titles
-        </div>
-
-      </a>
-
-
-      <!-- GAMES -->
-      <a href="games.html" class="archive-card">
-
-        <div class="archive-icon">💿</div>
-
-        <div class="archive-title">
-          Games
-        </div>
-
-        <div class="archive-description">
-          games to play! Includes all class of 09 games
-        </div>
-
-      </a>
-
-
-      <!-- MUSIC -->
-      <a href="music.html" class="archive-card">
-
-        <div class="archive-icon">🎧</div>
-
-        <div class="archive-title">
-          Music
-        </div>
-
-        <div class="archive-description">
-          A collection of songs! includes lana del rey unrealeased
-        </div>
-
-      </a>
-
-    </div>
-
-   <footer>
-
-  ˚.⋆꒰১ angel archive ໒꒱⋆.˚
-
- <iframe width="314" height="321" scrolling="no" src="https://gify.pet/pet/pet.html?name=Pusheen &dob=1794108559&gender=f&element=Air&pet=https%3A%2F%2Fuser.uploads.dev%2Ffile%2Fb149a5930dfa5e821723af9b5d3984a9.png&map=tree.jpg&background=https%3A%2F%2Fuser.uploads.dev%2Ffile%2F2d1204bf9a8ae01400b25d5172a05de3.jpg&tablecolor=black&textcolor=%23ffe5e5" frameborder="0"></iframe>
-
-  <div style="margin-top:20px;">
-    <a href="https://tally.so/r/lbxLEN" target="_blank"
-      style="display:inline-block;background-color:#F8F3E9;color:#B0B0B0;text-decoration:none;padding:14px 28px;border-radius:18px;font-size:17px;box-shadow:0 4px 12px rgba(0,0,0,0.08);transition:transform 0.25s ease, box-shadow 0.25s ease;">
-      🎬 suggest a movie 
-    </a>
-  </div>
-
-</footer>
-
-   
-
   </div>
 
 </body>
