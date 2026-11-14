@@ -1,441 +1,374 @@
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Angel Archive ⋆𐙚 ̊</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Angel Archive ⋆𐙚 ̊</title>
 
-<div class="search-container">
-    <span>⌕</span>
-    <input
-        type="text"
-        id="movieSearch"
-        placeholder="search movies..."
-        onkeyup="searchMovies()"
-    >
-</div>
-  <style>
-  * {
-    box-sizing: border-box;
-  }
+<style>
+* {
+  box-sizing: border-box;
+}
 
-  body {
-    background-color: #FFECEC;
-    font-family: 'Georgia', serif;
-    color: #B0B0B0;
-    margin: 0;
-    padding: 20px;
-    overflow-wrap: break-word;
-  }
+body {
+  background-color: #FFECEC;
+  font-family: 'Georgia', serif;
+  color: #B0B0B0;
+  margin: 0;
+  padding: 20px;
+  overflow-wrap: break-word;
+}
 
-  h1 {
-    text-align: center;
-    font-size: 48px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: #B0B0B0;
-  }
+h1 {
+  text-align: center;
+  font-size: 48px;
+  margin: 10px 0;
+  color: #B0B0B0;
+}
 
-  p.intro {
-    text-align: center;
-    font-size: 20px;
-    line-height: 1.6;
-    margin: 0 auto 40px;
-    color: #B0B0B0;
-    max-width: 800px;
-  }
-
-  .movie-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .movie-card {
-    background-color: #F8D8E2;
-    padding: 12px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    color: #B0B0B0;
-    min-width: 0;
-    overflow-wrap: anywhere;
-  }
-
-  .movie-card:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  }
-
-  .movie-card img {
-    display: block;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 2 / 3;
-    object-fit: cover;
-    border-radius: 12px;
-    margin: 10px 0;
-  }
-
-  .movie-card a {
-    display: inline-block;
-    max-width: 100%;
-    background-color: #FFECEC;
-    color: #B0B0B0;
-    padding: 8px 12px;
-    border-radius: 12px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 14px;
-    overflow-wrap: anywhere;
-    transition: background-color 0.2s ease, transform 0.2s ease;
-  }
-
-  .movie-card a:hover {
-    background-color: #FFB6C1;
-    color: #B0B0B0;
-    transform: scale(1.03);
-  }
-
-  footer {
-    margin-top: 50px;
-    text-align: center;
-    font-size: 16px;
-    color: #B0B0B0;
-  }
-
-  /* Mobile layout */
-  @media screen and (max-width: 600px) {
-    body {
-      padding: 12px;
-    }
-
-    h1 {
-      font-size: clamp(27px, 8vw, 36px);
-      line-height: 1.25;
-      margin-top: 8px;
-      margin-bottom: 12px;
-    }
-
-    p.intro {
-      font-size: 14px;
-      line-height: 1.6;
-      margin-bottom: 24px;
-      padding: 0 4px;
-    }
-
-    .movie-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 12px;
-    }
-
-    .movie-card {
-      padding: 8px;
-      border-radius: 12px;
-      font-size: 13px;
-    }
-
-    .movie-card img {
-      aspect-ratio: 2 / 3;
-      border-radius: 9px;
-      margin: 8px 0;
-    }
-
-    .movie-card a {
-      display: block;
-      width: 100%;
-      padding: 9px 4px;
-      margin-top: 4px;
-      font-size: 11px;
-      line-height: 1.4;
-    }
-
-    .movie-card:hover,
-    .movie-card a:hover {
-      transform: none;
-    }
-
-    footer {
-      font-size: 13px;
-      margin-top: 30px;
-    }
-  }
-
-  /* Very narrow phones */
-  @media screen and (max-width: 350px) {
-    body {
-      padding: 10px;
-    }
-
-    h1 {
-      font-size: 27px;
-    }
-
-    .movie-grid {
-      grid-template-columns: 1fr;
-      gap: 14px;
-    }
-
-    .movie-card {
-      padding: 12px;
-    }
 .search-container {
-    text-align: center;
-    margin: 30px auto;
+  text-align: center;
+  margin: 25px auto 35px;
 }
 
 #movieSearch {
-    width: 65%;
-    max-width: 380px;
-    padding: 13px 18px;
-    border: 1px solid #e5caca;
-    border-radius: 3px;
-    background: #fffafa;
-    color: #8f7777;
-    font-family: Georgia, serif;
-    font-size: 13px;
-    letter-spacing: 0.5px;
-    outline: none;
-    box-shadow: 2px 3px 8px rgba(180, 140, 140, 0.08);
-    transition: 0.3s;
+  width: 65%;
+  max-width: 380px;
+  padding: 13px 18px;
+  border: 1px solid #e5caca;
+  border-radius: 3px;
+  background: #fffafa;
+  color: #8f7777;
+  font-family: Georgia, serif;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  outline: none;
+  box-shadow: 2px 3px 8px rgba(180, 140, 140, 0.08);
 }
 
 #movieSearch:focus {
-    border-color: #c9a5a5;
-    background: #ffffff;
+  border-color: #c9a5a5;
+  background: #ffffff;
 }
 
 #movieSearch::placeholder {
-    color: #c4aaaa;
-    font-style: italic;
+  color: #c4aaaa;
+  font-style: italic;
 }
 
-.search-label {
-    color: #b69a9a;
-    font-family: Georgia, serif;
-    font-size: 11px;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 30px auto;
+  align-items: start;
 }
-    .movie-card a {
-      font-size: 13px;
-    }
+
+.movie-card {
+  background-color: #F8D8E2;
+  padding: 12px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: #B0B0B0;
+  min-width: 0;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+.movie-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.movie-card img {
+  display: block;
+  width: 100%;
+  height: 245px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.movie-card a {
+  display: block;
+  width: 100%;
+  background-color: #FFECEC;
+  color: #B0B0B0;
+  padding: 9px 5px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+  transition: background-color 0.2s ease;
+}
+
+.movie-card a:hover {
+  background-color: #FFB6C1;
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 16px;
+  color: #B0B0B0;
+}
+
+/* Tablet */
+@media screen and (max-width: 900px) {
+  .movie-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
   }
-    
-  </style>
+
+  .movie-card img {
+    height: 220px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+  body {
+    padding: 12px;
+  }
+
+  h1 {
+    font-size: clamp(27px, 8vw, 36px);
+    line-height: 1.25;
+  }
+
+  .movie-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .movie-card {
+    padding: 8px;
+    border-radius: 12px;
+    font-size: 13px;
+  }
+
+  .movie-card img {
+    height: 190px;
+    border-radius: 9px;
+  }
+
+  .movie-card a {
+    font-size: 11px;
+    padding: 9px 4px;
+  }
+
+  .movie-card:hover {
+    transform: none;
+  }
+
+  footer {
+    font-size: 13px;
+  }
+}
+
+/* Very narrow phones */
+@media screen and (max-width: 350px) {
+  .movie-card img {
+    height: 160px;
+  }
+}
+</style>
 </head>
 
 <body>
 
-  <h1>Angel Archive ⋆𐙚 ̊</h1>
- 
-<p style="text-align:center; font-size:16px; color:#B0B0B0; margin-bottom:60px;">
-  Shows page (update: lots of shows are uploaded onto a website called Febbox as it holds big files, so u might have to log in ♡
+<h1>Angel Archive ⋆𐙚 ̊</h1>
+
+<p style="text-align:center; font-size:16px; color:#B0B0B0; margin-bottom:35px;">
+Shows page (update: lots of shows are uploaded onto a website called Febbox as it holds big files, so u might have to log in ♡)
 </p>
 
-   <div class="movie-card">
-  NANA
-  <img src="https://i.pinimg.com/1200x/a1/81/af/a181af165882c8385af9998b68652830.jpg" alt="nana poster">
-  <br>
-  <a href="https://archive.org/details/nana.-s-01-e-04_202508/NANA.S01E01.mkv" target="_blank">Click to watch ♡</a>
+<div class="search-container">
+  <span>⌕</span>
+  <input
+    type="text"
+    id="movieSearch"
+    placeholder="search movies..."
+    onkeyup="searchMovies()"
+  >
 </div>
 
-
-
-
-<div class="movie-card">
-  Friends (requested)
-  <img src="https://i.pinimg.com/736x/d6/79/5e/d6795eabd7965241ef6160ee3aa13f64.jpg" alt="ms poster">
-  <br>
-  <a href="https://www.febbox.com/share/3zW2PF3P" target="_blank">Click to watch ♡</a>
-</div>     
+<div class="movie-grid">
 
 <div class="movie-card">
-  Skins
-  <img src="https://i.pinimg.com/736x/02/09/e8/0209e80b7919a3fc1511a16ea5beaf55.jpg" alt="ms poster">
-  <br>
-  <a href="https://www.febbox.com/share/vIfAiTue" target="_blank">Click to watch ♡</a>
-</div>   
+NANA
+<img src="https://i.pinimg.com/1200x/a1/81/af/a181af165882c8385af9998b68652830.jpg" alt="nana poster">
+<a href="https://archive.org/details/nana.-s-01-e-04_202508/NANA.S01E01.mkv" target="_blank">Click to watch ♡</a>
+</div>
 
+<div class="movie-card">
+Friends (requested)
+<img src="https://i.pinimg.com/736x/d6/79/5e/d6795eabd7965241ef6160ee3aa13f64.jpg" alt="Friends poster">
+<a href="https://www.febbox.com/share/3zW2PF3P" target="_blank">Click to watch ♡</a>
+</div>
 
- <div class="movie-card">
-  The Powerpuff girls
-  <img src="https://i.pinimg.com/736x/ef/0a/c3/ef0ac3c677a15e0c9a088651a0b287f1.jpg" alt="ms poster">
-  <br>
-  <a href="https://www.febbox.com/share/zwwvvwWR" target="_blank">Click to watch ♡</a>
-</div>     
+<div class="movie-card">
+Skins
+<img src="https://i.pinimg.com/736x/02/09/e8/0209e80b7919a3fc1511a16ea5beaf55.jpg" alt="Skins poster">
+<a href="https://www.febbox.com/share/vIfAiTue" target="_blank">Click to watch ♡</a>
+</div>
 
+<div class="movie-card">
+The Powerpuff girls
+<img src="https://i.pinimg.com/736x/ef/0a/c3/ef0ac3c677a15e0c9a088651a0b287f1.jpg" alt="Powerpuff Girls poster">
+<a href="https://www.febbox.com/share/zwwvvwWR" target="_blank">Click to watch ♡</a>
+</div>
 
- <div class="movie-card">
-  The L word
-  <img src="https://i.pinimg.com/736x/8c/a1/63/8ca163beba233f2f9d397173c75b6089.jpg" alt="ms poster">
-  <br>
-  <a href="https://www.febbox.com/share/5HjIJucQ" target="_blank">Click to watch ♡</a>
-</div> 
-    
+<div class="movie-card">
+The L word
+<img src="https://i.pinimg.com/736x/8c/a1/63/8ca163beba233f2f9d397173c75b6089.jpg" alt="The L Word poster">
+<a href="https://www.febbox.com/share/5HjIJucQ" target="_blank">Click to watch ♡</a>
+</div>
 
- <div class="movie-card">
-  Sterling Point (season 1)
-  <img src="https://i.pinimg.com/736x/fe/b6/7e/feb67ecd62227d6b42564c13a45a641b.jpg" alt="ms poster">
-  <br>
-  <a href="https://www.bilibili.tv/en/video/4800504502557696" target="_blank">Click to watch ♡</a>
-</div> 
+<div class="movie-card">
+Sterling Point (season 1)
+<img src="https://i.pinimg.com/736x/fe/b6/7e/feb67ecd62227d6b42564c13a45a641b.jpg" alt="Sterling Point poster">
+<a href="https://www.bilibili.tv/en/video/4800504502557696" target="_blank">Click to watch ♡</a>
+</div>
 
-    
- <div class="movie-card">
-  Buffy the Vampire Slayer 
-  <img src="https://i.pinimg.com/736x/4a/b1/86/4ab1865532250524ef7919c04e4e9485.jpg" alt="ms poster">
-  <br>
-  <a href="https://www.febbox.com/share/cUyhck0E" target="_blank">Click to watch ♡</a>
-</div> 
+<div class="movie-card">
+Buffy the Vampire Slayer
+<img src="https://i.pinimg.com/736x/4a/b1/86/4ab1865532250524ef7919c04e4e9485.jpg" alt="Buffy poster">
+<a href="https://www.febbox.com/share/cUyhck0E" target="_blank">Click to watch ♡</a>
+</div>
 
- <div class="movie-card">
-  My little Pony
-  <img src="https://i.pinimg.com/736x/fd/7a/b5/fd7ab559a3a699e4ef7d09ad35c686b0.jpg" alt="ms poster">
-  <br>
-  <a href="https://archive.org/details/MyLittlePonyFull" target="_blank">Click to watch ♡</a>
-</div>     
-  
+<div class="movie-card">
+My little Pony
+<img src="https://i.pinimg.com/736x/fd/7a/b5/fd7ab559a3a699e4ef7d09ad35c686b0.jpg" alt="My Little Pony poster">
+<a href="https://archive.org/details/MyLittlePonyFull" target="_blank">Click to watch ♡</a>
+</div>
 
- <div class="movie-card">
-  Yellow Jackets
-  <img src="https://i.pinimg.com/736x/6e/89/d7/6e89d7681e9cdda5a056026104d94117.jpg" alt="spvtw poster">
-  <br>
-  <a href="https://docs.google.com/document/d/1aq9wxrBh_aK8V-1bevefuqbB_OdNlVpk5lPgkoc-ARk/edit?usp=sharing" target="_blank">Click to watch ♡</a>
-</div>    
+<div class="movie-card">
+Yellow Jackets
+<img src="https://i.pinimg.com/736x/6e/89/d7/6e89d7681e9cdda5a056026104d94117.jpg" alt="Yellowjackets poster">
+<a href="https://docs.google.com/document/d/1aq9wxrBh_aK8V-1bevefuqbB_OdNlVpk5lPgkoc-ARk/edit?usp=sharing" target="_blank">Click to watch ♡</a>
+</div>
 
- <div class="movie-card">
-  Ever After High 
-  <img src="https://i.pinimg.com/736x/00/5e/ad/005ead45562d39b5830f02c12c428cfd.jpg" alt="spvtw poster">
-  <br>
-  <a href="https://drive.google.com/drive/folders/1G_JAukMzahwQsdpb19pdLWXtZOvbrInp" target="_blank">Click to watch ♡</a>
-</div>  
+<div class="movie-card">
+Ever After High
+<img src="https://i.pinimg.com/736x/00/5e/ad/005ead45562d39b5830f02c12c428cfd.jpg" alt="Ever After High poster">
+<a href="https://drive.google.com/drive/folders/1G_JAukMzahwQsdpb19pdLWXtZOvbrInp" target="_blank">Click to watch ♡</a>
+</div>
 
-
- <div class="movie-card">
+<div class="movie-card">
 American horror story (all 12 seasons)
-  <img src="https://i.pinimg.com/736x/9d/e1/e1/9de1e109e2ed69067ddf3eb385ead8a0.jpg" alt="spvtw poster">
-  <br>
-  <a href="https://www.febbox.com/share/kunOn3y3" target="_blank">Click to watch ♡</a>
-</div>  
-    
- 
+<img src="https://i.pinimg.com/736x/9d/e1/e1/9de1e109e2ed69067ddf3eb385ead8a0.jpg" alt="American Horror Story poster">
+<a href="https://www.febbox.com/share/kunOn3y3" target="_blank">Click to watch ♡</a>
+</div>
 
- <div class="movie-card">
+<div class="movie-card">
 One tree hill
-  <img src="https://i.pinimg.com/736x/92/e7/f2/92e7f28de96cc704246c5f79792b0122.jpg" alt="spvtw poster">
-  <br>
-  <a href="https://drive.google.com/drive/folders/1tUIyQd1Pmp950N-tKc3dqnJ3uMFGxw8H" target="_blank">Click to watch ♡</a>
-</div>  
+<img src="https://i.pinimg.com/736x/92/e7/f2/92e7f28de96cc704246c5f79792b0122.jpg" alt="One Tree Hill poster">
+<a href="https://drive.google.com/drive/folders/1tUIyQd1Pmp950N-tKc3dqnJ3uMFGxw8H" target="_blank">Click to watch ♡</a>
+</div>
 
- <div class="movie-card">
+<div class="movie-card">
 Stranger things
-  <img src="https://i.pinimg.com/736x/82/5b/5c/825b5c476381004850a5b29c05975b45.jpg" alt="spvtw poster">
-  <br>
-  <a href="https://docs.google.com/document/d/15CVoHpNOIVa41Icu322RCKvwq8QUloK0vyT1O4fXwXo/edit?usp=sharing" target="_blank">Click to watch ♡</a>
-</div>      
- 
-
- <div class="movie-card">
-  PEN15
-  <img src="https://i.pinimg.com/1200x/e2/08/4a/e2084a4807d1972a1135bb6c493ae450.jpg" alt="spvtw poster">
-  <br>
-  <a href="https://www.febbox.com/share/1OkLXFt2" target="_blank">Click to watch ♡</a>
-</div> 
-
-    
-<div class="movie-card">
-  Euphoria
-  <img src="https://i.pinimg.com/1200x/60/42/19/604219bd3b1085cd3e107c5be3d48c63.jpg" alt="spvtw poster">
-  <br>
-  <a href="https://www.febbox.com/share/qOc50gJx" target="_blank">Click to watch ♡</a>
-</div> 
+<img src="https://i.pinimg.com/736x/82/5b/5c/825b5c476381004850a5b29c05975b45.jpg" alt="Stranger Things poster">
+<a href="https://docs.google.com/document/d/15CVoHpNOIVa41Icu322RCKvwq8QUloK0vyT1O4fXwXo/edit?usp=sharing" target="_blank">Click to watch ♡</a>
+</div>
 
 <div class="movie-card">
-  The Office 
-  <img src="https://i.pinimg.com/736x/c4/4e/36/c44e364bfbe2593fa4b1b8ba2cd3c0a5.jpg" alt="spvtw poster">
-  <br>
-  <a href="https://www.febbox.com/share/0zHzk2zU" target="_blank">Click to watch ♡</a>
-</div>     
+PEN15
+<img src="https://i.pinimg.com/1200x/e2/08/4a/e2084a4807d1972a1135bb6c493ae450.jpg" alt="PEN15 poster">
+<a href="https://www.febbox.com/share/1OkLXFt2" target="_blank">Click to watch ♡</a>
+</div>
 
 <div class="movie-card">
-  Heated rivalry (requested)
-  <img src="https://i.pinimg.com/736x/30/71/04/30710448198e9546b3056a515de8095d.jpg" alt="spvtw poster">
-  <br>
-  <a href="https://drive.google.com/drive/folders/15YTrDc3LltsoUs55zZ-I34XfwPQh4dQr" target="_blank">Click to watch ♡</a>
-</div>     
-    
+Euphoria
+<img src="https://i.pinimg.com/1200x/60/42/19/604219bd3b1085cd3e107c5be3d48c63.jpg" alt="Euphoria poster">
+<a href="https://www.febbox.com/share/qOc50gJx" target="_blank">Click to watch ♡</a>
+</div>
 
 <div class="movie-card">
-  Supernatural 
-  <img src="https://i.pinimg.com/736x/7d/08/02/7d08020287a94e12497a0642650d1bc5.jpg" alt="spvtw poster">
-  <br>
-  <a href="https://www.febbox.com/share/XexP2dOx" target="_blank">Click to watch ♡</a>
-</div>  
+The Office
+<img src="https://i.pinimg.com/736x/c4/4e/36/c44e364bfbe2593fa4b1b8ba2cd3c0a5.jpg" alt="The Office poster">
+<a href="https://www.febbox.com/share/0zHzk2zU" target="_blank">Click to watch ♡</a>
+</div>
 
-  <div class="movie-card">
-  Pretty little liars
-  <img src="https://i.pinimg.com/736x/7c/88/79/7c8879436261c406e0d61477075fea28.jpg" alt="spvtw poster">
-  <br>
-  <a href="https://www.febbox.com/share/Kbl6Aza2" target="_blank">Click to watch ♡</a>
-</div>    
-        
+<div class="movie-card">
+Heated rivalry (requested)
+<img src="https://i.pinimg.com/736x/30/71/04/30710448198e9546b3056a515de8095d.jpg" alt="Heated Rivalry poster">
+<a href="https://drive.google.com/drive/folders/15YTrDc3LltsoUs55zZ-I34XfwPQh4dQr" target="_blank">Click to watch ♡</a>
+</div>
 
-   <div class="movie-card">
-  Paradise kiss (English dub)
-  <img src="https://i.pinimg.com/736x/f6/4c/96/f64c96688563db04711cc8b13049a945.jpg" alt="spvtw poster">
-  <br>
-  <a href="https://www.youtube.com/playlist?list=PLiDGNVrKtS0rYYOZDJjmlU7XyU-O7QyKr" target="_blank">Click to watch ♡</a>
-</div>  
-  
-    <div class="movie-card">
-  Buffy The Vampire Slayer
-  <img src="https://i.pinimg.com/736x/3b/bd/62/3bbd6267b28615c93c6a2b55ba675288.jpg" alt="spvtw poster">
-  <br>
-  <a href="https://www.febbox.com/share/cUyhck0E" target="_blank">Click to watch ♡</a>
-</div>     
+<div class="movie-card">
+Supernatural
+<img src="https://i.pinimg.com/736x/7d/08/02/7d08020287a94e12497a0642650d1bc5.jpg" alt="Supernatural poster">
+<a href="https://www.febbox.com/share/XexP2dOx" target="_blank">Click to watch ♡</a>
+</div>
 
-    <div class="movie-card">
-  The Vampire diaries
-  <img src="https://i.pinimg.com/736x/74/d6/1e/74d61ec1af1a0eff6d3fa4cc79a1f260.jpg" alt="spvtw poster">
-  <br>
-  <a href="https://www.febbox.com/file/share_info?key=jWTh1pef" target="_blank">Click to watch ♡</a>
-</div>  
+<div class="movie-card">
+Pretty little liars
+<img src="https://i.pinimg.com/736x/7c/88/79/7c8879436261c406e0d61477075fea28.jpg" alt="Pretty Little Liars poster">
+<a href="https://www.febbox.com/share/Kbl6Aza2" target="_blank">Click to watch ♡</a>
+</div>
 
-    <div class="movie-card">
-  Thirteen reasons why 
-  <img src="https://i.pinimg.com/736x/71/36/62/7136629e21366eadb94ddba6d36e1c3c.jpg" alt="spvtw poster">
-  <br>
-  <a href="https://www.febbox.com/share/DmwLIvUR" target="_blank">Click to watch ♡</a>
-</div> 
-    
-    <div class="movie-card">
-  South Park
-  <img src="https://i.pinimg.com/736x/0d/30/79/0d3079c67149d5da77d361162cd5e6a4.jpg" alt="spvtw poster">
-  <br>
-  <a href="https://www.febbox.com/file/share_info?key=I-EitPHU" target="_blank">Click to watch ♡</a>
-</div> 
+<div class="movie-card">
+Paradise kiss (English dub)
+<img src="https://i.pinimg.com/736x/f6/4c/96/f64c96688563db04711cc8b13049a945.jpg" alt="Paradise Kiss poster">
+<a href="https://www.youtube.com/playlist?list=PLiDGNVrKtS0rYYOZDJjmlU7XyU-O7QyKr" target="_blank">Click to watch ♡</a>
+</div>
 
-</div> <!-- ONLY ONE closing movie-grid div -->
-  <script>
+<div class="movie-card">
+Buffy The Vampire Slayer
+<img src="https://i.pinimg.com/736x/3b/bd/62/3bbd6267b28615c93c6a2b55ba675288.jpg" alt="Buffy poster">
+<a href="https://www.febbox.com/share/cUyhck0E" target="_blank">Click to watch ♡</a>
+</div>
+
+<div class="movie-card">
+The Vampire diaries
+<img src="https://i.pinimg.com/736x/74/d6/1e/74d61ec1af1a0eff6d3fa4cc79a1f260.jpg" alt="The Vampire Diaries poster">
+<a href="https://www.febbox.com/file/share_info?key=jWTh1pef" target="_blank">Click to watch ♡</a>
+</div>
+
+<div class="movie-card">
+Thirteen reasons why
+<img src="https://i.pinimg.com/736x/71/36/62/7136629e21366eadb94ddba6d36e1c3c.jpg" alt="Thirteen Reasons Why poster">
+<a href="https://www.febbox.com/share/DmwLIvUR" target="_blank">Click to watch ♡</a>
+</div>
+
+<div class="movie-card">
+South Park
+<img src="https://i.pinimg.com/736x/0d/30/79/0d3079c67149d5da77d361162cd5e6a4.jpg" alt="South Park poster">
+<a href="https://www.febbox.com/file/share_info?key=I-EitPHU" target="_blank">Click to watch ♡</a>
+</div>
+
+</div>
+
+<footer>
+  Angel Archive ⋆𐙚 ̊
+</footer>
+
+<script>
 function searchMovies() {
-    let input = document.getElementById("movieSearch").value.toLowerCase();
-    let cards = document.querySelectorAll(".movie-card");
+  let input = document.getElementById("movieSearch").value.toLowerCase();
+  let cards = document.querySelectorAll(".movie-card");
 
-    cards.forEach(card => {
-        let title = card.textContent.toLowerCase();
+  cards.forEach(card => {
+    let title = card.textContent.toLowerCase();
 
-        if (title.includes(input)) {
-            card.style.display = "";
-        } else {
-            card.style.display = "none";
-        }
-    });
+    if (title.includes(input)) {
+      card.style.display = "";
+    } else {
+      card.style.display = "none";
+    }
+  });
 }
 </script>
-</body>
 
+</body>
 </html>
+
